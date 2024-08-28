@@ -17,6 +17,7 @@ router.post('/', async (req, res) => {
     }
 })
 
+// fetch aal the menu
 router.get('/', async (req, res) => {
     try {
         const data = await MenuItem.find();
