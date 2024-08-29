@@ -28,8 +28,8 @@ app.use('/person',personRutes);
 const menuItemRutes = require('./routes/menuItemRoutes');
 app.use('/menu',menuItemRutes);
 
-const userRutes = require('./routes/userRoutes');
-app.use('/user',userRutes);
+const userRoutes = require('./routes/userRoutes');
+app.use('/user',userRoutes);
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT)
