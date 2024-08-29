@@ -24,6 +24,7 @@ app.get('/about', function (req, res) {
 const personRutes = require('./routes/personRoutes');
 app.use('/person',personRutes);
 
+
 const menuItemRutes = require('./routes/menuItemRoutes');
 app.use('/menu',menuItemRutes);
 
