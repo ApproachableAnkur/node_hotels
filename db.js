@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+//http://localhost:3000/person
+
 //const mongoURL = 'mongodb://localhost:27017/hotels';
 
 
