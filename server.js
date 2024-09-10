@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const db = require('./db')
 // const Person = require('./models/Person')
@@ -6,6 +7,7 @@ const db = require('./db')
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // req.body
 
+app.use(cors());
 app.get('/', function (req, res) {
     res.send('welcom to my hotels ...... how i can help you?')
 })
@@ -31,5 +33,5 @@ app.use('/menu',menuItemRutes);
 const userRoutes = require('./routes/userRoutes');
 app.use('/user',userRoutes);
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT)
